@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for link in link  %}
+        <p>Original url :{{link.original_url}}</p>
+        <p>Short url:{{url_for('view.redirect_to_url', short_url=link.short_url,_external=True) }}</p>
+        <p>Visit:{{link.visits}}</p>
+       
+    {% endfor %}
+{% endblock content %}

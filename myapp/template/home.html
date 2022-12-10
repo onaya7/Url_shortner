@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method= "POST"   action="{{ url_for('view.add_link' ) }}">
+        <label for="link">Enter link</label>
+        <input type="text" name="original_url">
+        <input type="submit">
+
+    </form>
+{% endblock content %}

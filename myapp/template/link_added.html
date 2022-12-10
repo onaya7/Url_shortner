@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
+   <p>Old link : {{original_url}}</p>
+   <p>New link :{{ url_for('view.redirect_to_url', short_url=new_link, _external=True) }}</p>
+{% endblock content %}
