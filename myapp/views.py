@@ -3,6 +3,7 @@ from myapp.models import db, Link
 
 view = Blueprint('view', __name__,  template_folder='template', static_folder='static')
 
+#Basic routes
 @view.route('/<short_url>')
 def redirect_to_url(short_url):
     print(short_url)
