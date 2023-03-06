@@ -1,6 +1,8 @@
 from flask import Blueprint, redirect, render_template, current_app, request
 from myapp.models import db, Link
 
+#views
+
 view = Blueprint('view', __name__,  template_folder='template', static_folder='static')
 
 #Basic routes
